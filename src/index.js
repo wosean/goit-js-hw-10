@@ -17,7 +17,7 @@ breedSelect.addEventListener("change", fetchCatInfo);
 fetchBreeds()
 .then((data) => renderMarkup(data))
 .catch(() => {
-    Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!");
+Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!");
 });
 
 function renderMarkup(data) { 
@@ -41,7 +41,7 @@ function fetchCatInfo() {
   .then((data) => renderCatInfo(data))
   .catch(() => {
 
-      Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!");
+  Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!");
   });
 }
 
