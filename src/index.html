@@ -19,9 +19,16 @@
 </html> -->
 
 <body>
-  <select class="breed-select hidden custom-select-container"></select>   
+  <!-- <select id="selectElement"> -->
+  <select class="breed-select hidden custom-select-container" id="selectElement"></select>   
   <div class="cat-info"></div>
   <span class="loader"></span>
   <script src="index.js" type="module"></script>
+  <script>
+new SlimSelect({
+  select: "#selectElement"
+})
+
+  </script>
 </body>
 </html>
