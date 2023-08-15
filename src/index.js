@@ -38,8 +38,7 @@ function fetchCatInfo() {
   fetchCatByBreed(selectedValue)
   .then((data) => renderCatInfo(data))
   .catch(() => {
-
-  Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!");
+    catInfo.innerHTML = "";
   });
 }
 
