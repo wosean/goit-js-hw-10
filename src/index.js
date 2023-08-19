@@ -39,6 +39,7 @@ function fetchCatInfo() {
   .then((data) => renderCatInfo(data))
   .catch(() => {
     catInfo.innerHTML = "";
+  Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!");
   });
 }
 
